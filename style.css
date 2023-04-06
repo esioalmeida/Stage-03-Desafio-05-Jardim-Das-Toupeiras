@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(assets/fundo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.jardim {
+  display: flex;
+  width: 100%;
+}
+
+.buracos {
+  display: grid;
+  width: 90rem;
+  margin: 0 auto;
+  
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  padding-top: 34rem;
+}
+
+.toupeiras {
+  margin: 0 auto;
+  width: 18rem;
+  height: 12rem;
+  
+  background-image: url(assets/toupeira6.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.toupeiras.um,
+.toupeiras.dois,
+.toupeiras.tres,
+.toupeiras.quatro,
+.toupeiras.cinco {
+  animation-name: SurgimentoDasToupeiras;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+}
+
+.toupeiras.um {
+  animation-delay: 2s;
+}
+
+.toupeiras.dois {
+  animation-delay: 5s;
+}
+
+.toupeiras.tres {
+  animation-delay: 8s;
+}
+
+.toupeiras.quatro {
+  animation-delay: 11s;
+}
+
+.toupeiras.cinco {
+  animation-delay: 14s; 
+}
+
+@keyframes SurgimentoDasToupeiras {
+  0% {
+    background-image: url(assets/toupeira6.svg);
+  }
+
+  16% {
+    background-image: url(assets/toupeira1.svg);
+  }
+
+  32% {
+    background-image: url(assets/toupeira2.svg);
+  }
+
+  48% {
+    background-image: url(assets/toupeira3.svg);
+  }
+
+  64% {
+    background-image: url(assets/toupeira4.svg);
+  }
+
+  80% {
+    background-image: url(assets/toupeira5.svg);
+  }
+
+  100% {
+    background-image: url(assets/toupeira6.svg);
+  }
+}
+
+@media (max-width:1600px) {
+  .buracos {
+    padding-top: 40rem;
+  }
+}
+
+@media (max-width:1480px) {
+  .buracos {
+    padding-top: 23rem;
+  }
+}
+
+@media (max-width:1040px) {
+  .buracos {
+    padding-top: 20rem;
+  }
+}
+
+@media (max-width:960px) {
+  .buracos {
+    padding-top: 18rem;
+    width: 16rem;
+    height: 10rem;
+  }
+
+}
+
+@media (max-width:800px) {
+  .buracos {
+    padding-top: 15rem;
+    width: 13rem;
+    height: 7em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media (max-width:600px) {
+  body {
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  .buracos {
+    padding-top: 25rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 15rem;
+    height: 9rem;
+  }
+}
