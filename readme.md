@@ -14,7 +14,7 @@
  <br/>
 
 <p align="center">
-  <img alt="final-layout-tablet-version" src="assets/toupeira.png" width="100%">  
+  <img alt="final-layout-desktop-version" src="assets/toupeira.png" width="100%">  
 </p>
 
 ## 🚀 Tecnologias
@@ -34,7 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
       
 <br/>
 
-- [Visite o projeto online](https://iaramarques.github.io/Stage03-Desafio05-Jardim-Das-Toupeiras/)
+- [Visite o projeto online](https://esioalmeida.github.io/Stage-03-Desafio-05-Jardim-Das-Toupeiras/)
 
 <br/>
 
